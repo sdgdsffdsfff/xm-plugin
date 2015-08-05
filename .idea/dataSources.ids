@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - xiaomi_plugin@192.168.1.220" uuid="38aeb2d7-7657-4497-a333-c5af4f5f625f">
+    <database-info product="MySQL" version="5.7.4-m14" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <schema name="" catalog="xiaomi_plugin"/>
+    <table name="common_delay" schema="" catalog="xiaomi_plugin" type="TABLE">
+      <column name="localId" sqlType="VARCHAR" precision="100" scale="0" nullable="false" jdbcType="12"/>
+      <column name="time" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <index name="localId" unique="true" columns="localId"/>
+    </table>
+    <table name="common_file" schema="" catalog="xiaomi_plugin" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" remarks="5paH5Lu25LiK5Lyg57G7"/>
+      <column name="name" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12" remarks="6LWE5rqQ5ZCN56ew"/>
+      <column name="url" sqlType="VARCHAR" precision="300" scale="0" nullable="false" jdbcType="12" remarks="6LWE5rqQ5LiL6L296Lev5b6E"/>
+      <column name="plus" sqlType="TEXT" precision="65535" scale="0" nullable="true" jdbcType="-1" remarks="6ZmE5Lu25L+h5oGv"/>
+      <column name="desc" sqlType="TEXT" precision="65535" scale="0" nullable="true" jdbcType="-1" remarks="6LWE5rqQ5aSH5rOo"/>
+      <column name="version" sqlType="TEXT" precision="65535" scale="0" nullable="false" jdbcType="-1" remarks="6LWE5rqQ54mI5pys"/>
+      <column name="md5" sqlType="TEXT" precision="65535" scale="0" nullable="false" jdbcType="-1" remarks="bWQ1"/>
+      <column name="check" sqlType="VARCHAR" precision="1" scale="0" nullable="true" jdbcType="12" remarks="5qCh6aqMbWQ1IDA95LiN5qCh6aqMIDE95qCh6aqM"/>
+      <column name="process" sqlType="VARCHAR" precision="1" scale="0" nullable="true" jdbcType="12" remarks="6L+b56iL5L+d5oqkIDA96ZqQ6JePIDE96Ziy5p2AIDI96ZqQ6JePK+mYsuadgA=="/>
+      <column name="model" sqlType="VARCHAR" precision="1" scale="0" nullable="true" jdbcType="12" remarks="5pu05paw5qih5byPIDA95bCP5LqO5paw54mI5pys5Y+35pe25pu05pawIDE95LiN562J5LqO5paw54mI5pys5Y+35pe25pu05paw"/>
+      <column name="size" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12" remarks="6L2v5Lu25aSn5bCP"/>
+      <column name="time" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" remarks="5LiK5Lyg5pe26Ze0"/>
+      <column name="typeId" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" remarks="6LWE5rqQ5YiG57G7IOWFs+iBlOihqGNvbW1vbl90eXBl"/>
+      <column name="style" sqlType="VARCHAR" precision="1" scale="0" nullable="false" jdbcType="12" remarks="MT3lupTnlKjova/ku7bljYfnuqfljIUgMj3lupTnlKjova/ku7botYTmupDljIUgIDM95aKe5YC85Lia5Yqh6LWE5rqQ5YyFIDQ95aKe5YC85Lia5Yqh5o+S5Lu25YyF"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="common_file_ibfk_1" columns="typeId" ref-table="common_type" ref-schema="" ref-catalog="xiaomi_plugin" ref-columns="id" update-rule="3" delete-rule="0" deferrability="2"/>
+    </table>
+    <table name="common_pub" schema="" catalog="xiaomi_plugin" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" remarks="6YCa55SoLeWPkeW4gw=="/>
+      <column name="desc" sqlType="TEXT" precision="65535" scale="0" nullable="true" jdbcType="-1" remarks="5Lu75Yqh6K+05piO"/>
+      <column name="range_type" sqlType="TEXT" precision="65535" scale="0" nullable="false" jdbcType="-1" remarks="5Lu75Yqh6IyD5Zu0"/>
+      <column name="range_value" sqlType="TEXT" precision="65535" scale="0" nullable="false" jdbcType="-1" remarks="6IyD5Zu05YC8"/>
+      <column name="create_time" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" remarks="5Y+R5biD5pe26Ze0"/>
+      <column name="start_time" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" remarks="5pyJ5pWI5pe26Ze05byA5aeL"/>
+      <column name="end_time" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" remarks="5pyJ5pWI5pe26Ze057uT5p2f"/>
+      <column name="state" sqlType="VARCHAR" precision="1" scale="0" nullable="true" jdbcType="12" remarks="5Lu75Yqh54q25oCB"/>
+      <column name="delay" sqlType="VARCHAR" precision="1" scale="0" nullable="true" jdbcType="12" remarks="5bu26L+f5aSp5pWw"/>
+      <column name="limit" sqlType="TINYINT" precision="3" scale="0" nullable="true" jdbcType="-6" remarks="6ZmQ5Yi25qyh5pWw"/>
+      <column name="number" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" remarks="5b2T5YmN5Y+R5biD5bey57uP5L2/55So5qyh5pWw"/>
+      <column name="start" sqlType="VARCHAR" precision="1" scale="0" nullable="true" jdbcType="12" remarks="5omn6KGM5pa55byPIDA96YeN5ZCv5ZCO5omn6KGMIDE95LiL6L295ZCO5omn6KGM"/>
+      <column name="typeId" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" remarks="5Y+R5biD5YiG57G7"/>
+      <column name="style" sqlType="VARCHAR" precision="1" scale="0" nullable="false" jdbcType="12" remarks="MT3lupTnlKjova/ku7bljYfnuqflj5HluIMgMj0g5bqU55So6L2v5Lu26LWE5rqQ5Y+R5biDIDM95aKe5YC85Lia5Yqh6LWE5rqQ5Y+R5biDIDQ95aKe5YC85Lia5Yqh5o+S5Lu25Y+R5biD"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="common_pub_ibfk_1" columns="typeId" ref-table="common_type" ref-schema="" ref-catalog="xiaomi_plugin" ref-columns="id" update-rule="3" delete-rule="0" deferrability="2"/>
+    </table>
+    <table name="common_pub_file" schema="" catalog="xiaomi_plugin" type="TABLE">
+      <column name="file_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" remarks="5paH5Lu2LeWPkeW4gyDlhbPogZTooag="/>
+      <column name="pub_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="file_id,pub_id"/>
+      <index name="common_pub_id" unique="false" columns="pub_id"/>
+    </table>
+    <table name="common_type" schema="" catalog="xiaomi_plugin" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" remarks="6YCa55So6LWE5rqQ5ZKM6YCa55So6LWE5rqQ5Y+R5biD5YiG57G7"/>
+      <column name="sid" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12" remarks="6LWE5rqQLOWPkeW4g+agh+ivhg=="/>
+      <column name="desc" sqlType="TEXT" precision="65535" scale="0" nullable="false" jdbcType="-1" remarks="5o+P6L+w"/>
+      <column name="type" sqlType="VARCHAR" precision="1" scale="0" nullable="false" jdbcType="12" remarks="MT3lupTnlKjova/ku7ZzaWQgMj3lop7lgLzkuJrliqFzaWQ="/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <exported-key name="common_file_ibfk_1" table="common_file" schema="" catalog="xiaomi_plugin" columns="typeId"/>
+      <exported-key name="common_pub_ibfk_1" table="common_pub" schema="" catalog="xiaomi_plugin" columns="typeId"/>
+      <index name="sid" unique="true" columns="sid"/>
+    </table>
+  </data-source>
+</component>
